@@ -6,6 +6,7 @@ provider "google" {
   zone         = "us-central1-b"
 }
 
+# Create bucket
 resource "google_storage_bucket" "bucket" {
   name     = "daslearning-tf-cld"
   location = "ASIA-SOUTH1"
