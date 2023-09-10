@@ -18,6 +18,7 @@ module "dl-bucket2" {
   # insert required variables here
   bucket_name = "daslearning-m-bt"
   location    = "asia-south1"
+  project     = "daslearning"
 }
 
 /*
