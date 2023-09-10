@@ -12,6 +12,15 @@ module "dl-bucket" {
   location    = "asia-south1"
 }
 
+module "dl-bucket2" {
+  source  = "app.terraform.io/daslearning-new/dl-bucket/google"
+  version = "0.0.2"
+  # insert required variables here
+  bucket_name = "daslearning-m-bt2"
+  location    = "asia-south1"
+  project     = "daslearning"
+}
+
 /*
 resource "google_storage_bucket" "bucket2" {
   name     = "daslearning-tf-cld2"
