@@ -21,6 +21,14 @@ module "dl-bucket2" {
   project     = "daslearning"
 }
 
+output "bucket_id" {
+  value = module.dl-bucket.bucket_id
+}
+
+output "bucket_id2" {
+  value = module.dl-bucket2.bucket_id
+}
+
 /*
 resource "google_storage_bucket" "bucket2" {
   name     = "daslearning-tf-cld2"
@@ -34,9 +42,5 @@ resource "google_storage_bucket" "bucket2" {
   bucket_name = "daslearning-m-bt"
   location    = "asia-south1"
   project     = "daslearning"
-}
-
-output "bucket_id" {
-  value = module.dl-test.bucket_id
 }
 */
