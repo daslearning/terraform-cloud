@@ -1,5 +1,5 @@
 # Deploy gcs bucket using terraform cloud
-
+/*
 provider "google" {
   project      = "daslearning"
 }
@@ -28,6 +28,7 @@ output "bucket_id" {
 output "bucket_id2" {
   value = module.dl-bucket2.bucket_id
 }
+*/
 
 /*
 resource "google_storage_bucket" "bucket2" {
